@@ -9,51 +9,65 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="15dp">
+
+
 
         <TextView
             android:id="@+id/txv_n1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Number one" />
+            android:text="Number one"
+            android:textSize="18sp"/>
+
+
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/et_n1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="2"
-            android:inputType="textPersonName"
+            android:hint="235"
+            android:inputType="number"
             android:text=""
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginBottom="20dp"
+            android:autofillHints="235"/>
 
 
         <TextView
-            android:id="@+id/txtv_n2"
+            android:id="@+id/txv_n2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Number two" />
+            android:text="Number two"
+            android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/et_n2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="3"
-            android:inputType="textPersonName"
-            android:text="" />
+            android:hint="210"
+            android:inputType="number"
+            android:text=""
+            android:autofillHints="210"/>
 
         <Button
             android:id="@+id/btn_add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="add" />
+            android:layout_marginTop="20dp"
+            android:background="#F81111"
+            android:onClick="Calc_Add"
+            android:text="add"
+            android:textColor="#FFFFFF"/>
 
-        <ImageView
-            android:id="@+id/imageView"
+        <TextView
+            android:id="@+id/tv_ans"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:text="?"
+            android:textSize="150dp"/>
 
     </LinearLayout>
 </RelativeLayout>
