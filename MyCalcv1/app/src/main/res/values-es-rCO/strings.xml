@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Mi Calculadora v1</string>
-    <string name="lb1_n1">Numero uno</string>
-    <string name="lb1_n2">Number dos</string>
+    <string name="lb1_n1">Numero  uno</string>
+    <string name="lb1_n2">Numero dos</string>
     <string name="hnt_n1">235</string>
     <string name="hnt_n2">210</string>
     <string name="btn_add">Sumar</string>
