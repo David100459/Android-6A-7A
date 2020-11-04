@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">PaletteColors</string>
-    <string name="Content">Icon</string>
+    <string name="img_content_desc">Icon app</string>
+
+    <string name="lbl_red">Red</string>
+    <string name="lbl_green">Green</string>
+    <string name="lbl_blue">Blue</string>
+    <string name="lbl_alpha">Alpha</string>
+
+
 </resources>
