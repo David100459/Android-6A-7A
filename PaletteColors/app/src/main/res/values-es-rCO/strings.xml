@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PaletteColors</string>
+    <string name="img_content_desc">Icono app</string>
+    <string name="lbl_red">Rojo</string>
+    <string name="lbl_green">Verde</string>
+    <string name="lbl_blue">Azul</string>
+    <string name="lbl_alpha">Alpha</string>
+    <string name="title_AboutOf">Acerca de</string>
+    <string name="title_Help">Ayuda</string>
+</resources>
