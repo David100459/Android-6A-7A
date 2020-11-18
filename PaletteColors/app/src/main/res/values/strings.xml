@@ -10,5 +10,9 @@
     <string name="title_AboutOf">About of</string>
     <string name="title_Help">Help</string>
 
+    <string name="bg_image">Background image</string>
 
+<!-- titles Menus -->
+    <string name="title_ite_exit">Exit</string>
+    <string name="title_Search">Search</string>
 </resources>

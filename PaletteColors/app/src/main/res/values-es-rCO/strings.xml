@@ -8,4 +8,10 @@
     <string name="lbl_alpha">Alpha</string>
     <string name="title_AboutOf">Acerca de</string>
     <string name="title_Help">Ayuda</string>
+
+    <string name="bg_image">Color de fondo</string>
+
+    <!-- titles Menus -->
+    <string name="title_ite_exit">Salir</string>
+    <string name="title_Search">Buscar</string>
 </resources>
