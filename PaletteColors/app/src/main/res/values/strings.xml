@@ -7,6 +7,17 @@
     <string name="lbl_blue">Blue</string>
     <string name="lbl_alpha">Alpha</string>
 
+    <string name="iteTransparent">Transparent</string>
+    <string name="iteSemiTransparent">SemiTransparent</string>
+    <string name="iteOpaque">Opaque</string>
+    <string name="iteBlack">Black</string>
+    <string name="iteWhite">White</string>
+    <string name="iteGreen">Green</string>
+    <string name="iteBlue">Blue</string>
+    <string name="iteCyan">Cyan</string>
+    <string name="iteMangeta">Mangeta</string>
+    <string name="iteYellow">Yellow</string>
+
     <string name="title_AboutOf">About of</string>
     <string name="title_Help">Help</string>
 
@@ -15,4 +26,5 @@
 <!-- titles Menus -->
     <string name="title_ite_exit">Exit</string>
     <string name="title_Search">Search</string>
+
 </resources>

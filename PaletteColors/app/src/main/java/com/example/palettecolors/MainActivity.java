@@ -4,6 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -18,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
     private SeekBar sbr_green = null;
     private SeekBar sbr_blue = null;
     private SeekBar sbr_alpha = null;
-    private SeekBar vie_colors = null;
+    private View vie_colors = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,11 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
         sbr_blue = findViewById(R.id.sbrBlue);
         sbr_alpha = findViewById(R.id.sbrAlpha);
         vie_colors = findViewById(R.id.vieColors);
+
+        sbr_red.setOnSeekBarChangeListener(this);
+        sbr_green.setOnSeekBarChangeListener(this);
+        sbr_blue.setOnSeekBarChangeListener(this);
+        sbr_alpha.setOnSeekBarChangeListener(this);
 
     }
 
@@ -46,12 +53,16 @@ public boolean onOptionsItemSelected(@NonNull MenuItem item){
         switch (item.getItemId()){
 
             case R.id.iteAboutOf:
-                Toast.makeText(this, "You' ve pressed About Of Option", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "You' ve pressed About Of Option", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this, AboutOfActivity.class);
+                startActivity(intent);
                 break;
 
 
             case  R.id.iteHelp:
-                Toast.makeText(this, "You' ve pressed Help Option", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "You' ve pressed Help Option", Toast.LENGTH_SHORT).show();
+                Intent intent2 = new Intent(this, HelpActivity.class);
+                startActivity(intent2);
                 break;
 
             case R.id.iteExit:
@@ -68,7 +79,13 @@ public boolean onOptionsItemSelected(@NonNull MenuItem item){
 
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+  int r = sbr_red.getProgress();
+  int g = sbr_green.getProgress();
+  int b = sbr_blue.getProgress();
+  int a = sbr_alpha.getProgress();
 
+  int color = Color.argb(a,r,g,b);
+  vie_colors.setBackgroundColor(color);
     }
 
     @Override

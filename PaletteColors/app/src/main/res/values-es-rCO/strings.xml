@@ -14,4 +14,14 @@
     <!-- titles Menus -->
     <string name="title_ite_exit">Salir</string>
     <string name="title_Search">Buscar</string>
+    <string name="iteTransparent">Transparente</string>
+    <string name="iteSemiTransparent">Semitransparente</string>
+    <string name="iteOpaque">Opaco</string>
+    <string name="iteBlack">Negro</string>
+    <string name="iteWhite">Blanco</string>
+    <string name="iteGreen">Verde</string>
+    <string name="iteBlue">Azul</string>
+    <string name="iteMangeta">Mangeta</string>
+    <string name="iteYellow">Amarillo</string>
+    <string name="iteCyan">Cian</string>
 </resources>
