@@ -13,9 +13,10 @@
     <string name="iteBlack">Black</string>
     <string name="iteWhite">White</string>
     <string name="iteGreen">Green</string>
+    <string name="iteRed">Red</string>
     <string name="iteBlue">Blue</string>
     <string name="iteCyan">Cyan</string>
-    <string name="iteMangeta">Mangeta</string>
+    <string name="iteMagenta">Magenta</string>
     <string name="iteYellow">Yellow</string>
 
     <string name="title_AboutOf">About of</string>
@@ -23,8 +24,9 @@
 
     <string name="bg_image">Background image</string>
 
-<!-- titles Menus -->
+    <!-- titles Menus -->
     <string name="title_ite_exit">Exit</string>
     <string name="title_Search">Search</string>
+    <string name="title_Reset">Reset</string>
 
 </resources>

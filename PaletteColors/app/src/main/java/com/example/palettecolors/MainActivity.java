@@ -72,6 +72,10 @@ public boolean onOptionsItemSelected(@NonNull MenuItem item){
             case R.id.iteSearch:
                 Toast.makeText(this, "You' ve pressed Search Option", Toast.LENGTH_SHORT).show();
                 break;
+
+            case  R.id.iteGreen:
+
+
         }
 
         return super.onOptionsItemSelected(item);

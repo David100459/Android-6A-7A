@@ -20,8 +20,10 @@
     <string name="iteBlack">Negro</string>
     <string name="iteWhite">Blanco</string>
     <string name="iteGreen">Verde</string>
+    <string name="iteRed">Rojo</string>
     <string name="iteBlue">Azul</string>
-    <string name="iteMangeta">Mangeta</string>
+    <string name="iteMagenta">Magenta</string>
     <string name="iteYellow">Amarillo</string>
     <string name="iteCyan">Cian</string>
+    <string name="title_Reset">Reiniciar</string>
 </resources>

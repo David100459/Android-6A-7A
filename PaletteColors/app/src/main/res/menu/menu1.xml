@@ -2,12 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+<!-- Search Icon
     <item
         android:id="@+id/iteSearch"
         android:title="@string/title_Search"
         android:icon="@drawable/ic_search"
         app:showAsAction="ifRoom"/>
-
+-->
     <item
         android:id="@+id/iteHelp"
         android:title="@string/title_Help"
@@ -22,5 +23,46 @@
         android:id="@+id/iteExit"
         android:title="@string/title_ite_exit"/>
 
+    <item
+        android:id="@+id/idTransparent"
+        android:title="@string/iteTransparent"/>
+
+    <item
+        android:id="@+id/idSemiTransparent"
+        android:title="@string/iteSemiTransparent"/>
+
+    <item
+        android:id="@+id/idOpaque"
+        android:title="@string/iteOpaque"/>
+
+    <item
+        android:id="@+id/idBlack"
+        android:title="@string/iteBlack"/>
+
+    <item
+        android:id="@+id/idWhite"
+        android:title="@string/iteWhite"/>
+
+    <item
+        android:id="@+id/idRed"
+        android:title="@string/iteRed"/>
+
+    <item
+        android:id="@+id/idGreen"
+        android:title="@string/iteGreen"/>
+
+    <item
+        android:id="@+id/idBlue"
+        android:title="@string/iteBlue"/>
+
+    <item android:id="@+id/idCyan"
+        android:title="@string/iteCyan"/>
+
+    <item
+        android:id="@+id/idMagenta"
+        android:title="@string/iteMagenta"/>
+
+    <item android:id="@+id/idYellow"
+        android:title="@string/iteYellow"/>
 
 </menu>
