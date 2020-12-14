@@ -2,13 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-<!-- Search Icon
+
     <item
         android:id="@+id/iteSearch"
         android:title="@string/title_Search"
         android:icon="@drawable/ic_search"
         app:showAsAction="ifRoom"/>
--->
+
+    <item
+        android:id="@+id/iteReset"
+        android:title="@string/title_Reset"
+        android:icon="@drawable/ic_reset"
+        app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/iteHelp"
         android:title="@string/title_Help"

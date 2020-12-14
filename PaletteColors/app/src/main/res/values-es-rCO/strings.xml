@@ -24,6 +24,7 @@
     <string name="iteBlue">Azul</string>
     <string name="iteMagenta">Magenta</string>
     <string name="iteYellow">Amarillo</string>
+    <string name="iteBrown">Cafe</string>
     <string name="iteCyan">Cian</string>
     <string name="title_Reset">Reiniciar</string>
 </resources>

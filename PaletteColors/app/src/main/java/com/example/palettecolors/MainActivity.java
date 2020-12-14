@@ -73,9 +73,59 @@ public boolean onOptionsItemSelected(@NonNull MenuItem item){
                 Toast.makeText(this, "You' ve pressed Search Option", Toast.LENGTH_SHORT).show();
                 break;
 
-            case  R.id.iteGreen:
+            case  R.id.iteReset:
+            break;
 
+            case R.id.idTransparent:
+                sbr_alpha.setProgress(0);
+                break;
 
+            case R.id.idSemiTransparent:
+                sbr_alpha.setProgress(128);
+                break;
+
+            case R.id.idOpaque:
+                sbr_alpha.setProgress(255);
+                break;
+
+            case R.id.idBlack:
+                break;
+
+            case R.id.idWhite:
+                break;
+
+            case R.id.idRed:
+                sbr_red.setProgress(255);
+                sbr_green.setProgress(0);
+                sbr_blue.setProgress(0);
+                break;
+
+            case R.id.idGreen:
+                sbr_red.setProgress(0);
+                sbr_green.setProgress(255);
+                sbr_blue.setProgress(0);
+                break;
+
+            case R.id.idBlue:
+                sbr_red.setProgress(0);
+                sbr_green.setProgress(0);
+                sbr_blue.setProgress(255);
+                break;
+
+            case R.id.idCyan:
+                break;
+
+            case R.id.idMagenta:
+                sbr_red.setProgress(255);
+                sbr_green.setProgress(0);
+                sbr_blue.setProgress(255);
+                break;
+
+            case R.id.idYellow:
+                sbr_red.setProgress(255);
+                sbr_green.setProgress(255);
+                sbr_blue.setProgress(0);
+                break;
         }
 
         return super.onOptionsItemSelected(item);
