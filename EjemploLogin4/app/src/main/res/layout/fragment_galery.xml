@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.GaleryFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_simple_dialog"
+                android:layout_width="wrap_content"
+                android:text="Dialogo simple"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btn_custom_dialog"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:text="Dialogo perzonalizado"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

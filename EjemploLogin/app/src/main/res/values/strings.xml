@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">EjemploLogin</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="menu_componentesUI">Componentes UI</string>
+    <string name="menu_dialogos">Dialogos</string>
+    <string name="menu_Test">Test</string>
+    <string name="menu_animaciones">Animaciones</string>
+    <string name="title_activity_config">Config</string>
+    <string name="nav_header_desc">Header desc</string>
+    <string name="nav_header_title">Nombre de usuario</string>
+    <string name="txt_Names">Nombres</string>
+    <string name="txt_Surnames">Apellidos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

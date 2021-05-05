@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/id_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Identificador"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/name_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:inputType="textCapWords" />
+
+    <RadioGroup
+        android:id="@+id/gender_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Genero" />
+
+        <RadioButton
+            android:id="@+id/man_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Hombre" />
+
+        <RadioButton
+            android:id="@+id/women_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Mujer" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/age_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Edad"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/code_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Código"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/semester_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Semestre"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/update_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar" />
+
+</LinearLayout>
