@@ -1,7 +1,6 @@
 package com.example.caralarm;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -28,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     Sensor s;
     TextView tv;
     Context context;
-    SensorEventListener sensorEventListener;
+
     MediaPlayer mp;
 
     @Override
@@ -46,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         sm = (SensorManager) getSystemService(SENSOR_SERVICE);
         s = sm.getDefaultSensor(Sensor.TYPE_PROXIMITY);
         sm.registerListener(this, s, SensorManager.SENSOR_DELAY_NORMAL);
+
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,10 +88,11 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         tv.setText("Sensor value: " + v);
 
         if (val < 1) {
-
+            mp.start();
         } else {
-
+            mp.pause();
         }
+
 
     }
 
