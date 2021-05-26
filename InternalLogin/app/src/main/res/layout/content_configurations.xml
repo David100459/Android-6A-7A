@@ -8,7 +8,10 @@
     <TextView
         android:id="@+id/tv_w"
         android:layout_width="match_parent"
-        android:textColor="#0D0E0D"
+        android:textColor="#DAC61A"
+        android:background="@color/purple_200"
+        android:text="DAVID MUÑOZ"
+        android:textSize="30dp"
         android:gravity="center"
         android:layout_height="match_parent"/>
 
