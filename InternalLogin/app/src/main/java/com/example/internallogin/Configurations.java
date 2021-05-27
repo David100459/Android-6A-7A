@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Configurations extends AppCompatActivity {
@@ -27,12 +28,12 @@ public class Configurations extends AppCompatActivity {
 
         context = this;
         sharedPref = context.getSharedPreferences("MyFile", Context.MODE_PRIVATE);
-        String usr = sharedPref.getString("n_usr", "-"); /*
+        String usr = sharedPref.getString("n_usr", "-");
 
 
         TextView tv = findViewById(R.id.tv_w);
-        tv.setText("USUARIO " + usr);
-        */
+        tv.setText("Bienvenido usuario " + usr);
+
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
