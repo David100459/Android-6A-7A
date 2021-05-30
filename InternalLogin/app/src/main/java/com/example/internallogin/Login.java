@@ -3,6 +3,7 @@ package com.example.internallogin;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -10,6 +11,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.util.Log;
 import android.view.View;
@@ -19,9 +21,11 @@ import android.widget.Toast;
 public class Login extends AppCompatActivity {
 
     Context context;
-    SharedPreferences sharedPref;
+    SharedPreferences sharedPref, sharedPrefBack;
     String usr;
     String pwd;
+
+    ConstraintLayout cl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,12 +34,19 @@ public class Login extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        cl = findViewById(R.id.cl_contlogin);
+
         context = this;
+
+        sharedPrefBack = context.getSharedPreferences("color", Context.MODE_PRIVATE);
+        String back=sharedPrefBack.getString("background","#ffffff");
+
         sharedPref = context.getSharedPreferences("MyFile", Context.MODE_PRIVATE);
 
         usr = sharedPref.getString("n_usr", "-");
         pwd = sharedPref.getString("pwd_usr", "-");
 
+        cl.setBackgroundColor(Color.parseColor(back));
     }
 
     public void login(View v) {

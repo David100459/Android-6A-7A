@@ -83,11 +83,11 @@ public class MainActivity extends AppCompatActivity {
                 editor.commit();
                 Toast.makeText(context, "Datos guardados, cierre y abra nuevamente la app", Toast.LENGTH_LONG).show();
             } else {
-                Snackbar.make(v, "La contraseña debe tener mínimo 4 digitos", Snackbar.LENGTH_SHORT)
+                Snackbar.make(v, "La contraseña debe tener mínimo 5 digitos", Snackbar.LENGTH_SHORT)
                         .show();
             }
         } else {
-            Snackbar.make(v, "El usuario debe tener mínimo 4 caracteres", Snackbar.LENGTH_SHORT)
+            Snackbar.make(v, "El usuario debe tener mínimo 5 caracteres", Snackbar.LENGTH_SHORT)
                     .show();
         }
 
