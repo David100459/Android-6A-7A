@@ -32,9 +32,9 @@
         <EditText
             android:id="@+id/et_pwd"
             android:layout_width="wrap_content"
-            android:inputType="numberPassword"
             android:layout_height="wrap_content"
-            android:hint="12345" />
+            android:hint="12345"
+            android:inputType="numberPassword" />
 
         <Button
             android:layout_width="wrap_content"

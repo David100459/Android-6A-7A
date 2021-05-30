@@ -28,6 +28,7 @@ public class Configurations extends AppCompatActivity {
     Button btn_baBlue;
     Button btn_baYellow;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +51,7 @@ public class Configurations extends AppCompatActivity {
         String usr = sharedPref.getString("n_usr", "-");
 
         cl.setBackgroundColor(Color.parseColor(previous));
+
 
         TextView tv = findViewById(R.id.tv_w);
         tv.setText("Bienvenido usuario " + usr);

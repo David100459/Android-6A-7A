@@ -20,7 +20,6 @@ public class Login extends AppCompatActivity {
     SharedPreferences sharedPref, sharedPrefBack;
     String usr;
     String pwd;
-
     ConstraintLayout cl;
 
     @Override
