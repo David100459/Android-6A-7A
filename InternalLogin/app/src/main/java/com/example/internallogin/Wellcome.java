@@ -4,27 +4,22 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
 import android.view.View;
 import android.view.Window;
-import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class Wellcome extends AppCompatActivity {
 
     Context context;
-    SharedPreferences sharedPref,sharedPrefColor;
+    SharedPreferences sharedPref, sharedPrefColor;
     FloatingActionButton fab;
     Window window;
     CoordinatorLayout cl;
@@ -36,12 +31,12 @@ public class Wellcome extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        cl =  findViewById(R.id.cl_wellcome);
+        cl = findViewById(R.id.cl_wellcome);
 
         context = this;
 
         sharedPrefColor = context.getSharedPreferences("color", Context.MODE_PRIVATE);
-        String previous= sharedPrefColor.getString("background","#ffffff");
+        String previous = sharedPrefColor.getString("background", "#ffffff");
 
         sharedPref = context.getSharedPreferences("MyFile", Context.MODE_PRIVATE);
         String usr = sharedPref.getString("n_usr", "-");

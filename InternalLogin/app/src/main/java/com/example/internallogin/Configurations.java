@@ -5,10 +5,13 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
+
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -25,10 +28,6 @@ public class Configurations extends AppCompatActivity {
     Button btn_baBlue;
     Button btn_baYellow;
 
-    Button btn_txtGreen;
-    Button btn_txtBlue;
-    Button btn_txtYellow;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,8 +39,6 @@ public class Configurations extends AppCompatActivity {
         btn_baGreen = findViewById(R.id.btn_baGreen);
         btn_baBlue = findViewById(R.id.btn_baBlue);
         btn_baYellow = findViewById(R.id.btn_baYellow);
-
-        btn_txtGreen = findViewById(R.id.btn_txtGreen);
 
         context = this;
         this.window = getWindow();
@@ -73,20 +70,13 @@ public class Configurations extends AppCompatActivity {
             }
         });
 
-       btn_baYellow.setOnClickListener(new View.OnClickListener() {
+        btn_baYellow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String background = "#FFEB3B";
                 changeBackground(background);
             }
         });
-
-       btn_txtGreen.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-
-           }
-       });
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

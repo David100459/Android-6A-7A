@@ -6,14 +6,10 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -39,7 +35,7 @@ public class Login extends AppCompatActivity {
         context = this;
 
         sharedPrefBack = context.getSharedPreferences("color", Context.MODE_PRIVATE);
-        String back=sharedPrefBack.getString("background","#ffffff");
+        String back = sharedPrefBack.getString("background", "#ffffff");
 
         sharedPref = context.getSharedPreferences("MyFile", Context.MODE_PRIVATE);
 
@@ -57,12 +53,11 @@ public class Login extends AppCompatActivity {
         String p = etP.getText().toString();
 
         if (u.compareTo(usr) == 0 && p.compareTo(pwd) == 0) {
-           // Toast.makeText(context, "Ir a la actividad de configuración", Toast.LENGTH_LONG).show();
+            // Toast.makeText(context, "Ir a la actividad de configuración", Toast.LENGTH_LONG).show();
             Intent intent = new Intent(this, Configurations.class);
             startActivity(intent);
             finish();
-        }
-        else {
+        } else {
             Toast.makeText(context, "Credenciales incorrectas", Toast.LENGTH_LONG).show();
         }
     }
