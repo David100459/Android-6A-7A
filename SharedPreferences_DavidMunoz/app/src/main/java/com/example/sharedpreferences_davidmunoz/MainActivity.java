@@ -80,8 +80,13 @@ public class MainActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = sharedPref.edit();
                 editor.putString("n_usr", usr);
                 editor.putString("pwd_usr", pwd);
-                editor.commit();
+                editor.apply();
                 Toast.makeText(context, "Datos guardados, cierre y abra nuevamente la app", Toast.LENGTH_LONG).show();
+
+                // I add this to not close and open the app
+                Intent intent = new Intent(this, Wellcome.class);
+                startActivity(intent);
+                finish();
             } else {
                 Snackbar.make(v, "La contraseña debe tener mínimo 5 digitos", Snackbar.LENGTH_SHORT)
                         .show();

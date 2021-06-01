@@ -10,16 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SharedPreferences_DavidMunoz">
         <activity
-            android:name=".Configurations"
-            android:label="@string/title_activity_configurations"
-            android:theme="@style/Theme.SharedPreferences_DavidMunoz.NoActionBar"></activity>
-        <activity
             android:name=".Login"
             android:label="@string/title_activity_login"
-            android:theme="@style/Theme.SharedPreferences_DavidMunoz.NoActionBar" />
+            android:theme="@style/Theme.SharedPreferences_DavidMunoz.NoActionBar"></activity>
         <activity
             android:name=".Wellcome"
             android:label="@string/title_activity_wellcome"
+            android:theme="@style/Theme.SharedPreferences_DavidMunoz.NoActionBar" />
+        <activity
+            android:name=".Setting"
+            android:label="@string/title_activity_setting"
             android:theme="@style/Theme.SharedPreferences_DavidMunoz.NoActionBar" />
         <activity
             android:name=".MainActivity"
