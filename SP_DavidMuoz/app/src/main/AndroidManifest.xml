@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SP_DavidMuñoz">
         <activity
-            android:name=".SettingActivity"
+            android:name=".Setting"
             android:label="@string/title_activity_setting"
             android:theme="@style/Theme.SP_DavidMuñoz.NoActionBar"></activity>
         <activity

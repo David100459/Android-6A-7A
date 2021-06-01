@@ -68,12 +68,12 @@ public class Login extends AppCompatActivity {
         String p = etP.getText().toString();
 
         if (u.compareTo(usr) == 0 && p.compareTo(pwd) == 0) {
-            Intent intent = new Intent(this, SettingActivity.class);
+            Intent intent = new Intent(this, Setting.class);
             startActivity(intent);
             finish();
         } else {
             Toast.makeText(context, "Credenciales incorrectas", Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(this, SettingActivity.class);
+            Intent intent = new Intent(this, Setting.class);
             startActivity(intent);
             finish();
         }
