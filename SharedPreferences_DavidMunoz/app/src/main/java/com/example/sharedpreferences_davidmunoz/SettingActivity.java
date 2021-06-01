@@ -22,7 +22,7 @@ import com.skydoves.colorpickerview.ColorPickerDialog;
 import com.skydoves.colorpickerview.listeners.ColorEnvelopeListener;
 
 
-public class Setting extends AppCompatActivity {
+public class SettingActivity extends AppCompatActivity {
 
     Context mContext;
     SharedPreferences sharedPref, sharedPrefColor;
@@ -73,7 +73,7 @@ public class Setting extends AppCompatActivity {
 
         // Show Dialog to save color
         cvFondo.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.M;
+            @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void onClick(View v) {
                 ColorPickerDialog.Builder builder = new ColorPickerDialog.Builder(mContext);
@@ -98,7 +98,7 @@ public class Setting extends AppCompatActivity {
             }
         });
         cvBoton.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.M)
+
             @Override
             public void onClick(View v) {
                 ColorPickerDialog.Builder builder = new ColorPickerDialog.Builder(mContext);
