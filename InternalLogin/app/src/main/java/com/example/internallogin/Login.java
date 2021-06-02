@@ -52,7 +52,6 @@ public class Login extends AppCompatActivity {
         String p = etP.getText().toString();
 
         if (u.compareTo(usr) == 0 && p.compareTo(pwd) == 0) {
-            // Toast.makeText(context, "Ir a la actividad de configuración", Toast.LENGTH_LONG).show();
             Intent intent = new Intent(this, Configurations.class);
             startActivity(intent);
             finish();
