@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1D0A1"
+    tools:context=".Fragments.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="-37dp"
+        tools:layout_editor_absoluteY="213dp">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="REGISTRO DE MASCOTA"
+                        android:textColor="#01579B"
+                        android:textSize="20sp"
+                        android:textStyle="bold|normal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Nombre:"
+                            android:textColor="#0E0E0E"
+                            android:textSize="16sp"
+                            android:textStyle="bold|normal" />
+
+                        <EditText
+                            android:id="@+id/name_et"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="65dp"
+                            android:background="#F6EDED"
+                            android:hint="                            "
+                            android:textColor="#5C00FF"
+                            android:textStyle="bold|normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Especie:"
+                            android:textColor="#0E0E0E"
+                            android:textSize="16sp"
+                            android:textStyle="bold|normal" />
+
+
+                        <EditText
+                            android:id="@+id/species_et"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="65dp"
+                            android:background="#F6EDED"
+                            android:hint="                            "
+                            android:textColor="#5C00FF"
+                            android:textStyle="bold|normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="43dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Raza:"
+                            android:textColor="#0E0E0E"
+                            android:textSize="16sp"
+                            android:textStyle="bold|normal" />
+
+                        <EditText
+                            android:id="@+id/race_et"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="65dp"
+                            android:background="#F6EDED"
+                            android:hint="                            "
+                            android:textColor="#5C00FF"
+                            android:textStyle="bold|normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Color Pelo:"
+                            android:textColor="#0E0E0E"
+                            android:textSize="16sp"
+                            android:textStyle="bold|normal" />
+
+                        <EditText
+                            android:id="@+id/hairColor_et"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="65dp"
+                            android:background="#F6EDED"
+                            android:hint="                            "
+                            android:textColor="#5C00FF"
+                            android:textStyle="bold|normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Fecha de nacimiento:"
+                            android:textColor="#0E0E0E"
+                            android:textSize="16sp"
+                            android:textStyle="bold|normal" />
+
+                        <EditText
+                            android:id="@+id/dateBirth_et"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="65dp"
+                            android:background="#F6EDED"
+                            android:hint=" DD/MM/AAAA           "
+                            android:textColor="#5C00FF"
+                            android:textStyle="bold|normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Peso (kg):"
+                            android:textColor="#0E0E0E"
+                            android:textSize="16dp"
+                            android:textStyle="bold|normal" />
+
+                        <EditText
+                            android:id="@+id/weight_et"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="65dp"
+                            android:background="#F6EDED"
+                            android:hint="                            "
+                            android:textColor="#5C00FF"
+                            android:textStyle="bold|normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Nombre del propietario:"
+                            android:textColor="#0E0E0E"
+                            android:textSize="16sp"
+                            android:textStyle="bold|normal" />
+
+                        <EditText
+                            android:id="@+id/ownersName_et"
+                            android:layout_width="156dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="65dp"
+                            android:background="#F6EDED"
+                            android:textColor="#5C00FF"
+                            android:textStyle="bold|normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Cedula del propietario"
+                            android:textColor="#0E0E0E"
+                            android:textSize="16sp"
+                            android:textStyle="bold|normal" />
+
+                        <EditText
+                            android:id="@+id/ownersID_et"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="65dp"
+                            android:background="#F6EDED"
+                            android:hint="                            "
+                            android:textColor="#5C00FF"
+                            android:textStyle="bold|normal" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:text="guardar" />
+
+                </LinearLayout>
+
+            </ScrollView>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

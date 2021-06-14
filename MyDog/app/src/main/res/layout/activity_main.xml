@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1F2EB"
+    tools:context=".Activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#000000">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="2dp"
+                        android:onClick="exit"
+                        android:src="@drawable/exit" />
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:onClick="dialog"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="12dp"
+                        android:src="@drawable/help" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="45dp"
+                    android:orientation="vertical"
+                    tools:layout_editor_absoluteX="45dp"
+                    tools:layout_editor_absoluteY="45dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:gravity="center"
+                        android:text="PET SITTING"
+                        android:textColor="#000000"
+                        android:textSize="42dp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Inicio Sesión"
+                        android:textColor="#090909"
+                        android:textSize="34dp"
+                        android:textStyle="bold|italic" />
+
+                    <ImageView
+                        android:onClick="start"
+                        android:id="@+id/imageView2"
+                        android:layout_width="137dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="14dp"
+                        app:srcCompat="@drawable/canino" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Usuario:"
+                            android:textColor="#0E0E0E"
+                            android:textSize="23dp"
+                            android:textStyle="bold|italic" />
+
+                        <EditText
+                            android:id="@+id/et_reg"
+                            android:layout_width="wrap_content"
+                            android:textStyle="bold|italic"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="65dp"
+                            android:background="#FFFFFF"
+                            android:hint="                            "
+                            android:textColor="#5C00FF" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Contraseña:"
+                            android:textColor="#0C0C0C"
+                            android:textSize="23dp"
+                            android:textStyle="bold|italic" />
+
+                        <EditText
+                            android:id="@+id/et_con"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="27dp"
+                            android:background="#FFFFFF"
+                            android:textStyle="bold|italic"
+                            android:hint="                          "
+                            android:inputType="numberPassword"
+                            android:textColor="#5C00FF" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="130dp"
+                            android:layout_height="50dp"
+                            android:backgroundTint="#000000"
+                            android:onClick="next"
+                            android:text="Register"
+                            android:textStyle="bold|italic"
+                            android:textColor="#FFFFFF"
+                            android:textSize="17dp" />
+
+                        <Button
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="25dp"
+                            android:backgroundTint="#FF0000"
+                            android:onClick="login"
+                            android:text="Login"
+                            android:textStyle="bold|italic"
+                            android:textColor="#FFFFFF"
+                            android:textSize="17dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/huella" />
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="50dp"
+                                    android:src="@drawable/huella" />
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/huella" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginTop="30dp"
+                                    android:src="@drawable/huella" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

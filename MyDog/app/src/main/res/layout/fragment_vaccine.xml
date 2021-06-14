@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1D0A1"
+    tools:context=".Fragments.VaccineFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="Vacunas Virbac"
+                    android:textColor="#FDFDFD"
+                    android:textSize="35dp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/remedio2" />
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/remedio3" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/huella" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/huella" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAF6F6"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/tv_vc1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="9dp"
+                    android:text="Canigen Puppy MH42P"
+                    android:textColor="#EC1010"
+                    android:textSize="23dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="Tiene esta vacuna"
+                    android:textColor="#000000"
+                    android:textStyle="bold|italic" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_black"
+                        android:layout_width="55dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#000000"
+                        android:text="SI"
+                        android:textStyle="bold|italic" />
+
+                    <Button
+                        android:id="@+id/btn_red"
+                        android:layout_width="55dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#FF0000"
+                        android:text="NO"
+                        android:textStyle="bold|italic" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="Se recomienda como primera vacuna en cachoros"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold|italic" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAF6F6"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/tv_vc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="9dp"
+                    android:text="Canigen Triple MH42/P"
+                    android:textColor="#EC1010"
+                    android:textSize="23dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="Tiene esta vacuna"
+                    android:textColor="#000000"
+                    android:textStyle="bold|italic" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_black2"
+                        android:layout_width="55dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#000000"
+                        android:text="SI"
+                        android:textStyle="bold|italic" />
+
+                    <Button
+                        android:id="@+id/btn_red2"
+                        android:layout_width="55dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#FF0000"
+                        android:text="NO"
+                        android:textStyle="bold|italic" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+
+                android:text="Se recomienda como refuerzo en cachorros entre 8 y 10 semanas en calendario tradicionales"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold|italic" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAF6F6"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/tv_vc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="9dp"
+                    android:text="Canigen Quintuple MHA2PPi/L"
+                    android:textColor="#EC1010"
+                    android:textSize="18dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="Tiene esta vacuna"
+                    android:textColor="#000000"
+                    android:textStyle="bold|italic" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_black3"
+                        android:layout_width="55dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#000000"
+                        android:text="SI"
+                        android:textStyle="bold|italic" />
+
+                    <Button
+                        android:id="@+id/btn_red3"
+                        android:layout_width="55dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#FF0000"
+                        android:text="NO"
+                        android:textStyle="bold|italic" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:text="Se recomienda como refuerzo en cachorros con riesgo a leptospirosis o traquobronquitis"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold|italic" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAF6F6"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/tv_vc4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="9dp"
+                    android:text="Canigen Séxtuple MHA2PPi/LR"
+                    android:textColor="#EC1010"
+                    android:textSize="18dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="Tiene esta vacuna"
+                    android:textColor="#000000"
+                    android:textStyle="bold|italic" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_black4"
+                        android:layout_width="55dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#000000"
+                        android:text="SI"
+                        android:textStyle="bold|italic" />
+
+                    <Button
+                        android:id="@+id/btn_red4"
+                        android:layout_width="55dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#FF0000"
+                        android:text="NO"
+                        android:textStyle="bold|italic" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+
+                android:text="Se recomienda como refuerzo anual o como ultima dosis en la primovacunación"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold|italic" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAF6F6"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/tv_vc5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="9dp"
+                    android:text="Parvigen"
+                    android:textColor="#EC1010"
+                    android:textSize="23dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="Tiene esta vacuna"
+                    android:textColor="#000000"
+                    android:textStyle="bold|italic" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_black5"
+                        android:layout_width="55dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#000000"
+                        android:text="SI"
+                        android:textStyle="bold|italic" />
+
+                    <Button
+                        android:id="@+id/btn_red5"
+                        android:layout_width="55dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#FF0000"
+                        android:text="NO"
+                        android:textStyle="bold|italic" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Se recomienda para la prevención de la parvovirosis canina"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold|italic" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAF6F6"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/tv_vc6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Ruvigen"
+                    android:textColor="#EC1010"
+                    android:textSize="23dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="Tiene esta vacuna"
+                    android:textColor="#000000"
+                    android:textStyle="bold|italic" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_black6"
+                        android:layout_width="55dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#000000"
+                        android:text="SI"
+                        android:textStyle="bold|italic" />
+
+                    <Button
+                        android:id="@+id/btn_red6"
+                        android:layout_width="55dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#FF0000"
+                        android:text="NO"
+                        android:textStyle="bold|italic" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="11dp"
+                android:text="Se recomienda para la prevención de la rabia canina y felina"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

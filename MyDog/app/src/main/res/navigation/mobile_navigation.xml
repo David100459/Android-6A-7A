@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.david.mydog.Fragments.HomeFragment"
+        android:label="Registro de Mascota"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.david.mydog.Fragments.GalleryFragment"
+        android:label="Visualizar"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.david.mydog.Fragments.SlideshowFragment"
+        android:label="Limpieza"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_vac"
+        android:name="com.david.mydog.Fragments.VaccineFragment"
+        android:label="Vacunas"
+        tools:layout="@layout/fragment_vaccine" />
+
+    <fragment
+        android:id="@+id/nav_vet"
+        android:name="com.david.mydog.Fragments.VeterinarianFragment"
+        android:label="Veterinarios Disponibles"
+        tools:layout="@layout/fragment_veterinarian" />
+
+    <fragment
+        android:id="@+id/nav_cls"
+        android:name="com.david.mydog.Fragments.CloseFragment"
+        tools:layout="@layout/fragment_close" />
+
+</navigation>
