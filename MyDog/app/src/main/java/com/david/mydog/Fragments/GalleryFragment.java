@@ -7,16 +7,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.david.mydog.Adapters.PetsAdapter;
 import com.david.mydog.R;
 import com.david.mydog.models.Pets;
 import com.david.mydog.utils.DBM;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class GalleryFragment extends Fragment {
@@ -25,7 +26,6 @@ public class GalleryFragment extends Fragment {
     public RecyclerView rv;
     public List<Pets> list;
     public PetsAdapter adapter;
-
     Context context;
     DBM dbm;
     String data;
@@ -46,6 +46,7 @@ public class GalleryFragment extends Fragment {
         //textView = root.findViewById(R.id.text_gallery);
         //textView.setText(data);
 
+
         rv = root.findViewById(R.id.pets_rv);
 
         LinearLayoutManager llm = new LinearLayoutManager(context);
@@ -55,6 +56,8 @@ public class GalleryFragment extends Fragment {
 
         rv.setAdapter(adapter);
         Log.d("Data", data);
+
+
     }
 
     public void lounchEvents() {
@@ -67,7 +70,7 @@ public class GalleryFragment extends Fragment {
         dbm = new DBM(context);
         list = dbm.listPets();
         data = "";
-        //ArrayList<Pets> l = dbm.listPets();
+        //ArrayList<Pets> l  = (ArrayList<Pets>) dbm.listPets();
         for (int i = 0; i < list.size(); i++) {
             data += "\n\t***\tDatos de la mascota " + (i + 1) + "\t***\n";
             data += list.get(i).toString();

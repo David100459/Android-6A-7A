@@ -7,17 +7,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
 
 import com.david.mydog.R;
-import com.david.mydog.databinding.FragmentHomeBinding;
 import com.david.mydog.models.Pets;
 import com.david.mydog.utils.DBM;
 
@@ -54,7 +49,6 @@ public class HomeFragment extends Fragment {
 
         context = root.getContext();
         dbm = new DBM(context);
-        btnSave = root.findViewById(R.id.btn_save);
 
         nameEt = root.findViewById(R.id.name_et);
         speciesEt = root.findViewById(R.id.species_et);
@@ -62,27 +56,27 @@ public class HomeFragment extends Fragment {
         hairColorEt = root.findViewById(R.id.hairColor_et);
         dateBirthEt = root.findViewById(R.id.dateBirth_et);
         weightEt = root.findViewById(R.id.weight_et);
-        ownerNameEt = root.findViewById(R.id.ownersID_et);
+        ownerNameEt = root.findViewById(R.id.ownersName_et);
         ownersIDEt = root.findViewById(R.id.ownersID_et);
-
+        btnSave = root.findViewById(R.id.btn_save);
     }
 
     public void lounchEvents() {
-        
-      btnSave.setOnClickListener(new View.OnClickListener() {
+
+        btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            pets = new Pets(
-                    nameEt.getText().toString(),
-                    speciesEt.getText().toString(),
-                    raceEt.getText().toString(),
-                    hairColorEt.getContext().toString(),
-                    dateBirthEt.getText().toString(),
-                    Integer.parseInt(weightEt.getText().toString()),
-                    ownerNameEt.getText().toString(),
-                    Integer.parseInt(ownersIDEt.getText().toString())
-            );
-                //MainActivity.studentsList.add(student);
+                pets = new Pets(
+                        nameEt.getText().toString(),
+                        speciesEt.getText().toString(),
+                        raceEt.getText().toString(),
+                        hairColorEt.getText().toString(),
+                        dateBirthEt.getText().toString(),
+                        Integer.parseInt(weightEt.getText().toString()),
+                        ownerNameEt.getText().toString(),
+                        Integer.parseInt(ownersIDEt.getText().toString())
+                );
+                // MainActivity.petsList.add(pets);
                 boolean ret = dbm.insertPetTuple(pets);
 
                 if (ret == true) {
@@ -95,8 +89,7 @@ public class HomeFragment extends Fragment {
                     weightEt.setText("");
                     ownerNameEt.setText("");
                     ownersIDEt.setText("");
-                }
-                else {
+                } else {
                     Toast.makeText(context, "Error al guardar el registro", Toast.LENGTH_SHORT).show();
                 }
             }

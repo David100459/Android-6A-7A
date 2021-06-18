@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="2dp"
-    android:background="@drawable/round_corners"
+    android:background="@drawable/can"
     android:padding="15dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="14dp"
-        tools:layout_editor_absoluteY="14dp">
+        android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -136,7 +133,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Fecha de nacimiento (DD/MM/AAAA):"
+                    android:text="Fecha de nacimiento:"
                     android:textColor="#000000"
                     android:textSize="15dp"
                     android:textStyle="bold" />
@@ -173,6 +170,7 @@
             </LinearLayout>
 
         </RelativeLayout>
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -188,7 +186,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nombre del propietario::"
+                    android:text="Nombre propietario:"
                     android:textColor="#000000"
                     android:textSize="15dp"
                     android:textStyle="bold" />
@@ -211,7 +209,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Cédula del propietario::"
+                    android:text="C.C propietario:"
                     android:textColor="#000000"
                     android:textSize="15dp"
                     android:textStyle="bold" />
@@ -244,7 +242,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:clickable="true"
-                    android:tint="#B71C1C"
+                    app:backgroundTint="#BD4B4B"
                     app:srcCompat="@android:drawable/ic_menu_delete" />
             </LinearLayout>
 
@@ -261,7 +259,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:clickable="true"
-                    android:tint="#006064"
+                    app:backgroundTint="#3C4BEC"
+                    app:rippleColor="#1A237E"
                     app:srcCompat="@android:drawable/ic_menu_edit" />
             </LinearLayout>
 

@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F1D0A1"
+    android:background="@drawable/fondo9"
     tools:context=".Fragments.HomeFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
+        android:orientation="vertical"
         tools:layout_editor_absoluteX="-37dp"
         tools:layout_editor_absoluteY="213dp">
 
@@ -29,6 +30,14 @@
                     android:orientation="vertical">
 
 
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/perros_animados" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -39,7 +48,7 @@
                         android:text="REGISTRO DE MASCOTA"
                         android:textColor="#01579B"
                         android:textSize="20sp"
-                        android:textStyle="bold|normal" />
+                        android:textStyle="normal|bold" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -74,6 +83,7 @@
                             android:layout_marginLeft="65dp"
                             android:background="#F6EDED"
                             android:hint="                            "
+                            android:inputType="text"
                             android:textColor="#5C00FF"
                             android:textStyle="bold|normal" />
 
@@ -102,6 +112,7 @@
                             android:layout_marginLeft="65dp"
                             android:background="#F6EDED"
                             android:hint="                            "
+                            android:inputType="text"
                             android:textColor="#5C00FF"
                             android:textStyle="bold|normal" />
 
@@ -130,6 +141,7 @@
                             android:layout_marginLeft="65dp"
                             android:background="#F6EDED"
                             android:hint="                            "
+                            android:inputType="text"
                             android:textColor="#5C00FF"
                             android:textStyle="bold|normal" />
 
@@ -158,6 +170,7 @@
                             android:layout_marginLeft="65dp"
                             android:background="#F6EDED"
                             android:hint="                            "
+                            android:inputType="text"
                             android:textColor="#5C00FF"
                             android:textStyle="bold|normal" />
 
@@ -186,6 +199,7 @@
                             android:layout_marginLeft="65dp"
                             android:background="#F6EDED"
                             android:hint=" DD/MM/AAAA           "
+                            android:inputType="text"
                             android:textColor="#5C00FF"
                             android:textStyle="bold|normal" />
 
@@ -214,6 +228,7 @@
                             android:layout_marginLeft="65dp"
                             android:background="#F6EDED"
                             android:hint="                            "
+                            android:inputType="number"
                             android:textColor="#5C00FF"
                             android:textStyle="bold|normal" />
 
@@ -241,6 +256,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginLeft="65dp"
                             android:background="#F6EDED"
+                            android:inputType="text"
                             android:textColor="#5C00FF"
                             android:textStyle="bold|normal" />
 
@@ -269,6 +285,7 @@
                             android:layout_marginLeft="65dp"
                             android:background="#F6EDED"
                             android:hint="                            "
+                            android:inputType="number"
                             android:textColor="#5C00FF"
                             android:textStyle="bold|normal" />
 

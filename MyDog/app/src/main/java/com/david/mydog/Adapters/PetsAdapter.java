@@ -24,6 +24,7 @@ import java.util.List;
 
 public class PetsAdapter extends RecyclerView.Adapter<PetsAdapter.PetsViewHolder> {
 
+
     Context context;
     List<Pets> list;
     DBM dbm;
@@ -57,13 +58,15 @@ public class PetsAdapter extends RecyclerView.Adapter<PetsAdapter.PetsViewHolder
         holder.raceTv.setText(s.getRace());
         holder.hairColorTv.setText(s.getHairColor());
         holder.dateBirthTv.setText(s.getDateBirth());
-        holder.weightTv.setText(s.getWeight());
+        holder.weightTv.setText(s.getWeight() + "");
         holder.ownerNameTv.setText(s.getOwnerName());
-        holder.ownersIDTv.setText(s.getOwnersID());
+        holder.ownersIDTv.setText(s.getOwnersID() + "");
 
         //Eventos a los botones
         //Delete: debe abrir un dialogo de confirmación
-        holder.btnDelte.setOnClickListener(new View.OnClickListener() {
+
+
+        holder.btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
@@ -106,7 +109,7 @@ public class PetsAdapter extends RecyclerView.Adapter<PetsAdapter.PetsViewHolder
                 final EditText hairColorET = v.findViewById(R.id.hairColor_et);
                 final EditText dateBirthET = v.findViewById(R.id.dateBirth_et);
                 final EditText weightET = v.findViewById(R.id.weight_et);
-                final EditText ownerNameET = v.findViewById(R.id.ownersName_et);
+                final EditText ownerNamET = v.findViewById(R.id.ownersName_et);
                 final EditText ownersIDET = v.findViewById(R.id.ownersID_et);
                 final Button btnSave = v.findViewById(R.id.btn_save);
 
@@ -115,10 +118,11 @@ public class PetsAdapter extends RecyclerView.Adapter<PetsAdapter.PetsViewHolder
                 raceET.setText(s.getRace());
                 hairColorET.setText(s.getHairColor());
                 dateBirthET.setText(s.getDateBirth());
-                weightET.setText(s.getWeight());
-                ownerNameET.setText(s.getOwnerName());
-                ownersIDET.setText(s.getOwnersID());
+                weightET.setText(s.getWeight() + "");
+                ownerNamET.setText(s.getOwnerName());
+                ownersIDET.setText(s.getOwnersID() + "");
                 ownersIDET.setEnabled(false);
+
 
                 btnSave.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -130,7 +134,7 @@ public class PetsAdapter extends RecyclerView.Adapter<PetsAdapter.PetsViewHolder
                         s.setHairColor(hairColorET.getText().toString());
                         s.setDateBirth(dateBirthET.getText().toString());
                         s.setWeight(Integer.parseInt(weightET.getText().toString()));
-                        s.setOwnerName(ownerNameET.getText().toString());
+                        s.setOwnerName(ownerNamET.getText().toString());
 
 
                         boolean ret = dbm.updatePets(s);
@@ -171,6 +175,7 @@ public class PetsAdapter extends RecyclerView.Adapter<PetsAdapter.PetsViewHolder
     /*
             Clase anidada para controlar los elementos de la interfaz
         */
+
     public static class PetsViewHolder extends RecyclerView.ViewHolder {
 
         TextView nameTv;
@@ -181,7 +186,7 @@ public class PetsAdapter extends RecyclerView.Adapter<PetsAdapter.PetsViewHolder
         TextView weightTv;
         TextView ownerNameTv;
         TextView ownersIDTv;
-        FloatingActionButton btnDelte;
+        FloatingActionButton btnDelete;
         FloatingActionButton btnUpdate;
 
 
@@ -196,9 +201,10 @@ public class PetsAdapter extends RecyclerView.Adapter<PetsAdapter.PetsViewHolder
             weightTv = itemView.findViewById(R.id.weight_tv);
             ownerNameTv = itemView.findViewById(R.id.ownerName_tv);
             ownersIDTv = itemView.findViewById(R.id.ownersID_tv);
-            btnDelte = itemView.findViewById(R.id.btn_del);
+            btnDelete = itemView.findViewById(R.id.btn_del);
             btnUpdate = itemView.findViewById(R.id.btn_upd);
 
         }
     }
+
 }

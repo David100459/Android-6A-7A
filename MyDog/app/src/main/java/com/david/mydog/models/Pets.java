@@ -22,6 +22,7 @@ public class Pets {
         this.ownersID = ownersID;
     }
 
+    //llave primaria ownersID
     public Pets(String name, String species, String race, String hairColor, String dateBirth, int weight, String ownerName) {
         this.name = name;
         this.species = species;

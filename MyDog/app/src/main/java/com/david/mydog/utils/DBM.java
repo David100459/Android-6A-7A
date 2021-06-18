@@ -19,7 +19,6 @@ public class DBM extends SQLiteOpenHelper {
     //Tipos de datos a utilizar en las tablas
     String STRING_TYPE = "text";
     String INT_TYPE = "integer";
-    String BOOLEAN_TYPE = "boolean";
 
 
     //nombres de las tablas de la base de datos
@@ -92,12 +91,12 @@ public class DBM extends SQLiteOpenHelper {
                                 + PTS_OWNERNAME + ", "
                                 + PTS_OWNERID + ") "
                                 + " VALUES ("
-                                + s.getName() + ", "
+                                + " '" + s.getName() + "', "
                                 + " '" + s.getSpecies() + "', "
                                 + " '" + s.getRace() + "', "
-                                + s.getHairColor() + ", "
+                                + " '" + s.getHairColor() + "', "
                                 + " '" + s.getDateBirth() + "', "
-                                + " '" + s.getWeight() + "', "
+                                + s.getWeight() + ", "
                                 + " '" + s.getOwnerName() + "', "
                                 + s.getOwnersID() + "); ";
 
@@ -114,6 +113,7 @@ public class DBM extends SQLiteOpenHelper {
         return ret;
     }
 
+
     public List<Pets> listPets() {
 
         List<Pets> l = new ArrayList<Pets>();
@@ -122,15 +122,14 @@ public class DBM extends SQLiteOpenHelper {
 
         while (c.moveToNext()) {
             Pets s = new Pets(
-
-                    c.getString(1), // PTS_NAME
-                    c.getString(2), //PTS_SPECIES
-                    c.getString(3), //PTS_RACE
-                    c.getString(4), //PTS_HAIRCOLOR
-                    c.getString(5), // PTS_DATEBIRTH
-                    c.getInt(6), //PTS_WEIGHT
-                    c.getString(7), //PTS_OWNERNAME
-                    c.getInt(8)//PTS_OWNERID
+                    c.getString(0), // PTS_NAME
+                    c.getString(1), //PTS_SPECIES
+                    c.getString(2), //PTS_RACE
+                    c.getString(3), //PTS_HAIRCOLOR
+                    c.getString(4), // PTS_DATEBIRTH
+                    c.getInt(5), //PTS_WEIGHT
+                    c.getString(6), //PTS_OWNERNAME
+                    c.getInt(7)//PTS_OWNERID
 
             );
             l.add(s);
@@ -142,50 +141,6 @@ public class DBM extends SQLiteOpenHelper {
         return l;
     }
 
-    public boolean updateAll(String val) {
-        boolean ret = false;
-
-        SQLiteDatabase db = getWritableDatabase();
-
-        if (db != null) {
-            try {
-                String q = "UPDATE " + TABLE_NAME_PETS +
-                        " SET "
-                        + PTS_OWNERID + " = '" + val + "' ";
-
-                db.execSQL(q);
-                ret = true;
-            } catch (Exception e) {
-                db.close();
-                e.getStackTrace();
-                ret = false;
-            }
-        }
-
-        return ret;
-    }
-
-    public boolean deleteAll() {
-        boolean ret = false;
-
-        SQLiteDatabase db = getWritableDatabase();
-
-        if (db != null) {
-            try {
-                String q = "DELETE FROM " + TABLE_NAME_PETS;
-                db.execSQL(q);
-                ret = true;
-            } catch (Exception e) {
-                db.close();
-                ret = false;
-                e.getStackTrace();
-            }
-        }
-
-        db.close();
-
-        return ret;
-    }
 
     public boolean updatePets(Pets s) {
         boolean ret = false;
@@ -202,9 +157,8 @@ public class DBM extends SQLiteOpenHelper {
                         + PTS_RACE + " = '" + s.getRace() + "', "
                         + PTS_HAIRCOLOR + " = '" + s.getHairColor() + "', "
                         + PTS_DATEBIRTH + " = '" + s.getDateBirth() + "', "
-                        + PTS_WEIGHT + " = '" + s.getWeight() + "', "
-                        + PTS_OWNERNAME + " = '" + s.getOwnerName() + "', "
-                        + PTS_OWNERID + " = '" + s.getOwnersID() + "', "
+                        + PTS_WEIGHT + " = " + s.getWeight() + ", "
+                        + PTS_OWNERNAME + " = '" + s.getOwnerName() + "' "
                         + " WHERE " + PTS_OWNERID + " = '" + s.getOwnersID() + "'";
 
                 db.execSQL(q);
@@ -242,5 +196,5 @@ public class DBM extends SQLiteOpenHelper {
 
         return ret;
     }
-
 }
+
