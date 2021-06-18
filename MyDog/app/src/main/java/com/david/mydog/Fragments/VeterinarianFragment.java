@@ -1,8 +1,10 @@
 package com.david.mydog.Fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -25,11 +27,12 @@ public class VeterinarianFragment extends Fragment {
     View view;
     Context context;
 
-    Button btn_tel, btn_yellow1, btn_yellow2, btn_yellow3, btn_yellow4, btn_yellow5, btn_yellow6,
+    Button  btn_yellow1, btn_yellow2, btn_yellow3, btn_yellow4, btn_yellow5, btn_yellow6,
             btn_yellow7, btn_yellow8, btn_yellow9, btn_yellow10, btn_yellow11, btn_yellow12,
             btn_yellow13, btn_yellow14, btn_yellow15, btn_yellow16, btn_yellow17, btn_yellow18,
             btn_yellow19, btn_yellow20, btn_yellow21, btn_yellow22, btn_yellow23, btn_yellow24,
-            btn_yellow25, btn_clear, btn_clear2, btn_clear3, btn_clear4, btn_clear5;
+            btn_yellow25, btn_clear, btn_clear2, btn_clear3, btn_clear4, btn_clear5, btn_call1,
+            btn_call2, btn_call3, btn_call4, btn_call5;
 
     String bcl1, bcl2, bcl3, bcl4, bcl5, bcl6, bcl7, bcl8, bcl9, bcl10, bcl11, bcl12, bcl13, bcl14,
             bcl15, bcl16, bcl17, bcl18, bcl19, bcl20, bcl21, bcl22, bcl23, bcl24, bcl25, bcl;
@@ -129,6 +132,11 @@ public class VeterinarianFragment extends Fragment {
         btn_clear3 = view.findViewById(R.id.btn_clear3);
         btn_clear4 = view.findViewById(R.id.btn_clear4);
         btn_clear5 = view.findViewById(R.id.btn_clear5);
+        btn_call1 = view.findViewById(R.id.btn_call1);
+        btn_call2 = view.findViewById(R.id.btn_call2);
+        btn_call3 = view.findViewById(R.id.btn_call3);
+        btn_call4 = view.findViewById(R.id.btn_call4);
+        btn_call5 = view.findViewById(R.id.btn_call5);
 
         int t = bcl1.length();
 
@@ -164,6 +172,51 @@ public class VeterinarianFragment extends Fragment {
     }
 
     public void lounchEvents() {
+
+        btn_call1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent call1 = new Intent(Intent.ACTION_CALL);
+                call1.setData(Uri.parse("tel:3116915056"));
+                startActivity(call1);
+            }
+        });
+
+        btn_call2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent call2 = new Intent(Intent.ACTION_CALL);
+                call2.setData(Uri.parse("tel:3116915056"));
+                startActivity(call2);
+            }
+        });
+
+        btn_call3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent call3 = new Intent(Intent.ACTION_CALL);
+                call3.setData(Uri.parse("tel:3116915056"));
+                startActivity(call3);
+            }
+        });
+
+        btn_call4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent call4 = new Intent(Intent.ACTION_CALL);
+                call4.setData(Uri.parse("tel:3116915056"));
+                startActivity(call4);
+            }
+        });
+
+        btn_call5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent call5 = new Intent(Intent.ACTION_CALL);
+                call5.setData(Uri.parse("tel:3116915056"));
+                startActivity(call5);
+            }
+        });
 
         btn_clear.setOnClickListener(new View.OnClickListener() {
             @Override

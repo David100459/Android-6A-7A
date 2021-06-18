@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.david.mydog.Activity.MainActivity;
 import com.david.mydog.R;
 
 /**
@@ -61,7 +62,7 @@ public class CloseFragment extends Fragment {
 
     public void lounchEvents(){
 
-        Intent intent = new Intent(context, HomeFragment.class);
+        Intent intent = new Intent(context, MainActivity.class);
         startActivity(intent);
 
     }

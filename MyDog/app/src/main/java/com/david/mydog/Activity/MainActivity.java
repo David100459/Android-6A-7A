@@ -5,6 +5,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.app.ActionBar;
 import android.app.AlertDialog;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -64,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 .setPositiveButton("Confirmar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Snackbar.make(v, "Gracias por su atención\t"+name+"\t"+ape, Snackbar.LENGTH_SHORT)
+                        Snackbar.make(v, "Gracias por su atención\t"+name+"\t\t"+ape, Snackbar.LENGTH_SHORT)
                                 .show();
                     }
                 });
@@ -73,7 +74,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void exit(View v) {
-        finish();
+        Toast.makeText(context, "Gracias por utilizar esta aplicación\t\t"+name+"\t"+ape, Toast.LENGTH_SHORT).show();
+        MainActivity.this.finishAffinity(); System.exit(0);
+
     }
 
     public void next(View v) {
